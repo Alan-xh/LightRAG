@@ -70,3 +70,6 @@ test_*
 
 # Cline files
 memory-bank/
+
+# uv
+.python-version
