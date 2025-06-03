@@ -73,3 +73,4 @@ memory-bank/
 
 # uv
 .python-version
+uv.lock

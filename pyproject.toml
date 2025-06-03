@@ -4,4 +4,34 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi>=0.115.12",
+    "aiohttp",
+    "configparser",
+    "future",
+    # Additional Packages for export Functionality
+    "pandas>=2.0.0",
+    # Extra libraries are installed when needed using pipmaster
+    "pipmaster",
+    "pydantic",
+    "python-dotenv",
+    # Unicode Collation Algorithm for proper Chinese sorting
+    "pyuca",
+    "setuptools",
+    "tenacity",
+    # LLM packages
+    "tiktoken",
+    "xlsxwriter>=3.1.0",
+    "gunicorn",
+    "psutil",
+    "jwt>=1.3.1",
+    "uvicorn>=0.34.3",
+    "aiofiles>=24.1.0",
+    "openai>=1.82.1",
+    "networkx>=3.5",
+    "nano-vectordb>=0.0.4.3",
+    "python-multipart>=0.0.20",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple"

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Start LightRAG server with Gunicorn
+Start LightRAG server with Gunicorn (mutil-thread)
 """
 
 import os
