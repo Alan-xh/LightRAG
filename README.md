@@ -217,69 +217,69 @@ if __name__ == "__main__":
 
 ```python
 class QueryParam:
-    """Configuration parameters for query execution in LightRAG."""
+"""LightRAG中查询执行的配置参数。"""
 
     mode: Literal["local", "global", "hybrid", "naive", "mix", "bypass"] = "global"
-    """Specifies the retrieval mode:
-    - "local": Focuses on context-dependent information.
-    - "global": Utilizes global knowledge.
-    - "hybrid": Combines local and global retrieval methods.
-    - "naive": Performs a basic search without advanced techniques.
-    - "mix": Integrates knowledge graph and vector retrieval.
+    """指定检索模式：
+    - "local": 专注于上下文相关的信息。
+    - "global": 利用全局知识。
+    - "hybrid": 结合本地和全局检索方法。
+    - "naive": 执行不使用高级技术的简单搜索。
+    - "mix": 整合知识图谱和向量检索。
     """
 
     only_need_context: bool = False
-    """If True, only returns the retrieved context without generating a response."""
+    """如果为True，仅返回检索到的上下文，不生成响应。"""
 
     only_need_prompt: bool = False
-    """If True, only returns the generated prompt without producing a response."""
+    """如果为True，仅返回生成的提示，不产生响应。"""
 
     response_type: str = "Multiple Paragraphs"
-    """Defines the response format. Examples: 'Multiple Paragraphs', 'Single Paragraph', 'Bullet Points'."""
+    """定义响应格式。例如：'Multiple Paragraphs'（多段落）、'Single Paragraph'（单段落）、'Bullet Points'（项目符号）。"""
 
     stream: bool = False
-    """If True, enables streaming output for real-time responses."""
+    """如果为True，启用流式输出以实现实时响应。"""
 
     top_k: int = int(os.getenv("TOP_K", "60"))
-    """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
+    """检索的顶级项目数量。在'local'模式下表示实体，在'global'模式下表示关系。"""
 
     max_token_for_text_unit: int = int(os.getenv("MAX_TOKEN_TEXT_CHUNK", "4000"))
-    """Maximum number of tokens allowed for each retrieved text chunk."""
+    """每个检索文本块允许的最大token数。"""
 
     max_token_for_global_context: int = int(
         os.getenv("MAX_TOKEN_RELATION_DESC", "4000")
     )
-    """Maximum number of tokens allocated for relationship descriptions in global retrieval."""
+    """全局检索中关系描述分配的最大token数。"""
 
     max_token_for_local_context: int = int(os.getenv("MAX_TOKEN_ENTITY_DESC", "4000"))
-    """Maximum number of tokens allocated for entity descriptions in local retrieval."""
+    """本地检索中实体描述分配的最大token数。"""
 
     hl_keywords: list[str] = field(default_factory=list)
-    """List of high-level keywords to prioritize in retrieval."""
+    """优先检索的高级关键字列表。"""
 
     ll_keywords: list[str] = field(default_factory=list)
-    """List of low-level keywords to refine retrieval focus."""
+    """用于细化检索焦点的低级关键字列表。"""
 
     conversation_history: list[dict[str, str]] = field(default_factory=list)
-    """Stores past conversation history to maintain context.
-    Format: [{"role": "user/assistant", "content": "message"}].
+    """存储过去的对话历史以保持上下文。
+    格式：[{"role": "user/assistant", "content": "消息"}]。
     """
 
     history_turns: int = 3
-    """Number of complete conversation turns (user-assistant pairs) to consider in the response context."""
+    """响应上下文中考虑的完整对话轮次（用户-助手对）数量。"""
 
     ids: list[str] | None = None
-    """List of ids to filter the results."""
+    """用于过滤结果的ID列表。"""
 
     model_func: Callable[..., object] | None = None
-    """Optional override for the LLM model function to use for this specific query.
-    If provided, this will be used instead of the global model function.
-    This allows using different models for different query modes.
+    """可选的LLM模型函数覆盖，用于此特定查询。
+    如果提供，将使用此函数而不是全局模型函数。
+    这允许为不同的查询模式使用不同的模型。
     """
 
     user_prompt: str | None = None
-    """User-provided prompt for the query.
-    If proivded, this will be use instead of the default vaulue from prompt template.
+    """用户提供的查询提示。
+    如果提供，将使用此提示而不是提示模板中的默认值。
     """
 ```
 

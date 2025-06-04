@@ -131,6 +131,7 @@ async def main():
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
+        # 异步插入具有检查点支持的文档
         with open("./book.txt", "r", encoding="utf-8") as f:
             await rag.ainsert(f.read())
 
@@ -178,6 +179,7 @@ async def main():
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
+        # 异步存储到 rag_storage
         if rag:
             await rag.finalize_storages()
 
