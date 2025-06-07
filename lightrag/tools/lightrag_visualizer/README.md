@@ -1,136 +1,95 @@
-# LightRAG 3D Graph Viewer
+# 3D GraphML Viewer
 
-An interactive 3D graph visualization tool included in the LightRAG package for visualizing and analyzing RAG (Retrieval-Augmented Generation) graphs and other graph structures.
+一个基于 Dear ImGui 和 ModernGL 的交互式 3D 图可视化工具。
 
-![image](https://github.com/user-attachments/assets/b0d86184-99fc-468c-96ed-c611f14292bf)
+## 功能特点
 
-## Installation
+- **3D 交互式可视化**: 使用 ModernGL 实现高性能的 3D 图形渲染
+- **多种布局算法**: 支持多种图布局方式
+  - Spring 布局
+  - Circular 布局
+  - Shell 布局
+  - Random 布局
+- **社区检测**: 支持图社区结构的自动检测和可视化
+- **交互控制**:
+  - WASD + QE 键控制相机移动
+  - 鼠标右键拖拽控制视角
+  - 节点选择和高亮
+  - 可调节节点大小和边宽度
+  - 可控制标签显示
+  - 可在节点的Connections间快速跳转
+- **社区检测**: 支持图社区结构的自动检测和可视化
+- **交互控制**:
+  - WASD + QE 键控制相机移动
+  - 鼠标右键拖拽控制视角
+  - 节点选择和高亮
+  - 可调节节点大小和边宽度
+  - 可控制标签显示
 
-### Quick Install
-```bash
-pip install lightrag-hku[tools]  # Install with visualization tool only
-# or
-pip install lightrag-hku[api,tools]  # Install with both API and visualization tools
-```
+## 技术栈
 
-## Launch the Viewer
-```bash
-lightrag-viewer
-```
+- **imgui_bundle**: 用户界面
+- **ModernGL**: OpenGL 图形渲染
+- **NetworkX**: 图数据结构和算法
+- **NumPy**: 数值计算
+- **community**: 社区检测
 
-## Features
+## 使用方法
 
-- **3D Interactive Visualization**: High-performance 3D graphics rendering using ModernGL
-- **Multiple Layout Algorithms**: Support for various graph layouts
-  - Spring layout
-  - Circular layout
-  - Shell layout
-  - Random layout
-- **Community Detection**: Automatic detection and visualization of graph community structures
-- **Interactive Controls**:
-  - WASD + QE keys for camera movement
-  - Right mouse drag for view angle control
-  - Node selection and highlighting
-  - Adjustable node size and edge width
-  - Configurable label display
-  - Quick navigation between node connections
-
-## Tech Stack
-
-- **imgui_bundle**: User interface
-- **ModernGL**: OpenGL graphics rendering
-- **NetworkX**: Graph data structures and algorithms
-- **NumPy**: Numerical computations
-- **community**: Community detection
-
-## Interactive Controls
-
-### Camera Movement
-- W: Move forward
-- S: Move backward
-- A: Move left
-- D: Move right
-- Q: Move up
-- E: Move down
-
-### View Control
-- Hold right mouse button and drag to rotate view
-
-### Node Interaction
-- Hover mouse to highlight nodes
-- Click to select nodes
-
-## Visualization Settings
-
-Adjustable via UI control panel:
-- Layout type
-- Node size
-- Edge width
-- Label visibility
-- Label size
-- Background color
-
-## Customization Options
-
-- **Node Scaling**: Adjust node size via `node_scale` parameter
-- **Edge Width**: Modify edge width using `edge_width` parameter
-- **Label Display**: Toggle label visibility with `show_labels`
-- **Label Size**: Adjust label size using `label_size`
-- **Label Color**: Set label color through `label_color`
-- **View Distance**: Control maximum label display distance with `label_culling_distance`
-
-## System Requirements
-
-- Python 3.9+
-- Graphics card with OpenGL 3.3+ support
-- Supported Operating Systems: Windows/Linux/MacOS
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Command Not Found**
+1. **启动程序**:
    ```bash
-   # Make sure you installed with the 'tools' option
    pip install lightrag-hku[tools]
-
-   # Verify installation
-   pip list | grep lightrag-hku
+   lightrag-viewer
    ```
 
-2. **ModernGL Initialization Failed**
-   ```bash
-   # Check OpenGL version
-   glxinfo | grep "OpenGL version"
+2. **加载字体**:
+   - 将中文字体文件 `font.ttf` 放置在 `assets` 目录下
+   - 或者修改 `CUSTOM_FONT` 常量来使用其他字体文件
 
-   # Update graphics drivers if needed
-   ```
+3. **加载图文件**:
+   - 点击界面上的 "Load GraphML" 按钮
+   - 选择 GraphML 格式的图文件
 
-3. **Font Loading Issues**
-   - The required fonts are included in the package
-   - If issues persist, check your graphics drivers
+4. **交互控制**:
+   - **相机移动**:
+     - W: 前进
+     - S: 后退
+     - A: 左移
+     - D: 右移
+     - Q: 上升
+     - E: 下降
+   - **视角控制**:
+     - 按住鼠标右键拖动来旋转视角
+   - **节点交互**:
+     - 鼠标悬停可高亮节点
+     - 点击可选中节点
 
-## Usage with LightRAG
+5. **可视化设置**:
+   - 可通过 UI 控制面板调整:
+     - 布局类型
+     - 节点大小
+     - 边的宽度
+     - 标签显示
+     - 标签大小
+     - 背景颜色
 
-The viewer is particularly useful for:
-- Visualizing RAG knowledge graphs
-- Analyzing document relationships
-- Exploring semantic connections
-- Debugging retrieval patterns
+## 自定义设置
 
-## Performance Optimizations
+- **节点缩放**: 通过 `node_scale` 参数调整节点大小
+- **边宽度**: 通过 `edge_width` 参数调整边的宽度
+- **标签显示**: 可通过 `show_labels` 开关标签显示
+- **标签大小**: 使用 `label_size` 调整标签大小
+- **标签颜色**: 通过 `label_color` 设置标签颜色
+- **视距控制**: 使用 `label_culling_distance` 控制标签显示的最大距离
 
-- Efficient graphics rendering using ModernGL
-- View distance culling for label display optimization
-- Community detection algorithms for optimized visualization of large-scale graphs
+## 性能优化
 
-## Support
+- 使用 ModernGL 进行高效的图形渲染
+- 视距裁剪优化标签显示
+- 社区检测算法优化大规模图的可视化效果
 
-- GitHub Issues: [LightRAG Repository](https://github.com/HKUDS/LightRAG)
-- Documentation: [LightRAG Docs](https://URL-to-docs)
+## 系统要求
 
-## License
-
-This tool is part of LightRAG and is distributed under the MIT License. See `LICENSE` for more information.
-
-Note: This visualization tool is an optional component of the LightRAG package. Install with the [tools] option to access the viewer functionality.
+- Python 3.10+
+- OpenGL 3.3+ 兼容的显卡
+- 支持的操作系统：Windows/Linux/MacOS

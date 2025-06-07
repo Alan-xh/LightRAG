@@ -46,9 +46,10 @@ function TabsNavigation() {
         <NavigationTab value="retrieval" currentTab={currentTab}>
           {t('header.retrieval')}
         </NavigationTab>
-        <NavigationTab value="api" currentTab={currentTab}>
+        {/* TODO: Add API tab栏 */}
+        {/* <NavigationTab value="api" currentTab={currentTab}>
           {t('header.api')}
-        </NavigationTab>
+        </NavigationTab> */}
       </TabsList>
     </div>
   )
@@ -68,7 +69,7 @@ export default function SiteHeader() {
 
   return (
     <header className="border-border/40 bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 flex h-10 w-full border-b px-4 backdrop-blur">
-      <div className="min-w-[200px] w-auto flex items-center">
+      {/* <div className="min-w-[200px] w-auto flex items-center">
         <a href={webuiPrefix} className="flex items-center gap-2">
           <ZapIcon className="size-4 text-emerald-400" aria-hidden="true" />
           <span className="font-bold md:inline-block">{SiteInfo.name}</span>
@@ -92,29 +93,32 @@ export default function SiteHeader() {
             </TooltipProvider>
           </div>
         )}
-      </div>
+      </div> */}
 
       <div className="flex h-10 flex-1 items-center justify-center">
         <TabsNavigation />
-        {isGuestMode && (
+        {/* TODO: Add 访客模式 logo */}
+        {/* {isGuestMode && (
           <div className="ml-2 self-center px-2 py-1 text-xs bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 rounded-md">
             {t('login.guestMode', 'Guest Mode')}
           </div>
-        )}
+        )} */}
       </div>
 
       <nav className="w-[200px] flex items-center justify-end">
         <div className="flex items-center gap-2">
-          {versionDisplay && (
+          {/* TODO: Add 版本号 */}
+          {/* {versionDisplay && (
             <span className="text-xs text-gray-500 dark:text-gray-400 mr-1">
               v{versionDisplay}
             </span>
-          )}
-          <Button variant="ghost" size="icon" side="bottom" tooltip={t('header.projectRepository')}>
+          )} */}
+          {/* TODO: Add 项目仓库 */}
+          {/* <Button variant="ghost" size="icon" side="bottom" tooltip={t('header.projectRepository')}>
             <a href={SiteInfo.github} target="_blank" rel="noopener noreferrer">
               <GithubIcon className="size-4" aria-hidden="true" />
             </a>
-          </Button>
+          </Button> */}
           <AppSettings />
           {!isGuestMode && (
             <Button

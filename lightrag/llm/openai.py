@@ -92,7 +92,6 @@ def create_openai_async_client(
         merged_configs["base_url"] = os.environ.get(
             "OPENAI_API_BASE", "https://api.openai.com/v1"
         )
-
     return AsyncOpenAI(**merged_configs)
 
 
