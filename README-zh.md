@@ -2,28 +2,25 @@
 
 <img src="./README.assets/b2aaf634151b4706892693ffb43d9093.png" width="800" alt="LightRAG Diagram">
 
-<div align="center">
-    <a href="https://trendshift.io/repositories/13043" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13043" alt="HKUDS%2FLightRAG | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</div>
+## 🎉 新闻
 
-## 🎉 News
-- [X] [2025.06.05]🎯📢LightRAG now supports multi-modal data handling through MinerU integration, enabling comprehensive document parsing and RAG capabilities across diverse formats including PDFs, images, Office documents, tables, and formulas. Please refer to the new [multimodal section](https://github.com/HKUDS/LightRAG/?tab=readme-ov-file#multimodal-document-processing-mineru-integration) for details.
-- [X] [2025.03.18]🎯📢LightRAG now supports citation functionality, enabling proper source attribution.
-- [X] [2025.02.05]🎯📢Our team has released [VideoRAG](https://github.com/HKUDS/VideoRAG) understanding extremely long-context videos.
-- [X] [2025.01.13]🎯📢Our team has released [MiniRAG](https://github.com/HKUDS/MiniRAG) making RAG simpler with small models.
-- [X] [2025.01.06]🎯📢You can now [use PostgreSQL for Storage](#using-postgresql-for-storage).
-- [X] [2024.12.31]🎯📢LightRAG now supports [deletion by document ID](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#delete).
-- [X] [2024.11.25]🎯📢LightRAG now supports seamless integration of [custom knowledge graphs](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#insert-custom-kg), empowering users to enhance the system with their own domain expertise.
-- [X] [2024.11.19]🎯📢A comprehensive guide to LightRAG is now available on [LearnOpenCV](https://learnopencv.com/lightrag). Many thanks to the blog author.
-- [X] [2024.11.11]🎯📢LightRAG now supports [deleting entities by their names](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#delete).
-- [X] [2024.11.09]🎯📢Introducing the [LightRAG Gui](https://lightrag-gui.streamlit.app), which allows you to insert, query, visualize, and download LightRAG knowledge.
-- [X] [2024.11.04]🎯📢You can now [use Neo4J for Storage](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#using-neo4j-for-storage).
-- [X] [2024.10.29]🎯📢LightRAG now supports multiple file types, including PDF, DOC, PPT, and CSV via `textract`.
-- [X] [2024.10.20]🎯📢We've added a new feature to LightRAG: Graph Visualization.
-- [X] [2024.10.18]🎯📢We've added a link to a [LightRAG Introduction Video](https://youtu.be/oageL-1I0GE). Thanks to the author!
-- [X] [2024.10.17]🎯📢We have created a [Discord channel](https://discord.gg/yF2MmDJyGJ)! Welcome to join for sharing and discussions! 🎉🎉
-- [X] [2024.10.16]🎯📢LightRAG now supports [Ollama models](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#quick-start)!
-- [X] [2024.10.15]🎯📢LightRAG now supports [Hugging Face models](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#quick-start)!
+- [X] [2025.06.05]🎯📢LightRAG现已集成MinerU，支持多模态文档解析与RAG（PDF、图片、Office、表格、公式等）。详见下方[多模态处理模块](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#multimodal-document-processing-mineru-integration)。
+- [X] [2025.03.18]🎯📢LightRAG现已支持引文功能。
+- [X] [2025.02.05]🎯📢我们团队发布了[VideoRAG](https://github.com/HKUDS/VideoRAG)，用于理解超长上下文视频。
+- [X] [2025.01.13]🎯📢我们团队发布了[MiniRAG](https://github.com/HKUDS/MiniRAG)，使用小型模型简化RAG。
+- [X] [2025.01.06]🎯📢现在您可以[使用PostgreSQL进行存储](#using-postgresql-for-storage)。
+- [X] [2024.12.31]🎯📢LightRAG现在支持[通过文档ID删除](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#delete)。
+- [X] [2024.11.25]🎯📢LightRAG现在支持无缝集成[自定义知识图谱](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#insert-custom-kg)，使用户能够用自己的领域专业知识增强系统。
+- [X] [2024.11.19]🎯📢LightRAG的综合指南现已在[LearnOpenCV](https://learnopencv.com/lightrag)上发布。非常感谢博客作者。
+- [X] [2024.11.11]🎯📢LightRAG现在支持[通过实体名称删除实体](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#delete)。
+- [X] [2024.11.09]🎯📢推出[LightRAG Gui](https://lightrag-gui.streamlit.app)，允许您插入、查询、可视化和下载LightRAG知识。
+- [X] [2024.11.04]🎯📢现在您可以[使用Neo4J进行存储](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#using-neo4j-for-storage)。
+- [X] [2024.10.29]🎯📢LightRAG现在通过`textract`支持多种文件类型，包括PDF、DOC、PPT和CSV。
+- [X] [2024.10.20]🎯📢我们为LightRAG添加了一个新功能：图形可视化。
+- [X] [2024.10.18]🎯📢我们添加了[LightRAG介绍视频](https://youtu.be/oageL-1I0GE)的链接。感谢作者！
+- [X] [2024.10.17]🎯📢我们创建了一个[Discord频道](https://discord.gg/yF2MmDJyGJ)！欢迎加入分享和讨论！🎉🎉
+- [X] [2024.10.16]🎯📢LightRAG现在支持[Ollama模型](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#quick-start)！
+- [X] [2024.10.15]🎯📢LightRAG现在支持[Hugging Face模型](https://github.com/HKUDS/LightRAG?tab=readme-ov-file#quick-start)！
 
 <details>
   <summary style="font-size: 1.4em; font-weight: bold; cursor: pointer; display: list-item;">
@@ -117,13 +114,7 @@ python examples/lightrag_openai_demo.py
 
 > 如果您希望将LightRAG集成到您的项目中，建议您使用LightRAG Server提供的REST API。LightRAG Core通常用于嵌入式应用，或供希望进行研究与评估的学者使用。
 
-### ⚠️ Important: Initialization Requirements
-
-**LightRAG requires explicit initialization before use.** You must call both `await rag.initialize_storages()` and `await initialize_pipeline_status()` after creating a LightRAG instance, otherwise you will encounter errors like:
-- `AttributeError: __aenter__` - if storages are not initialized
-- `KeyError: 'history_messages'` - if pipeline status is not initialized
-
-### A Simple Program
+### 一个简单程序
 
 以下Python代码片段演示了如何初始化LightRAG、插入文本并进行查询：
 
@@ -147,9 +138,8 @@ async def initialize_rag():
         embedding_func=openai_embed,
         llm_model_func=gpt_4o_mini_complete,
     )
-    # IMPORTANT: Both initialization calls are required!
-    await rag.initialize_storages()  # Initialize storage backends
-    await initialize_pipeline_status()  # Initialize processing pipeline
+    await rag.initialize_storages()
+    await initialize_pipeline_status()
     return rag
 
 async def main():
@@ -228,69 +218,69 @@ if __name__ == "__main__":
 
 ```python
 class QueryParam:
-"""LightRAG中查询执行的配置参数。"""
+    """Configuration parameters for query execution in LightRAG."""
 
     mode: Literal["local", "global", "hybrid", "naive", "mix", "bypass"] = "global"
-    """指定检索模式：
-    - "local": 专注于上下文相关的信息。
-    - "global": 利用全局知识。
-    - "hybrid": 结合本地和全局检索方法。
-    - "naive": 执行不使用高级技术的简单搜索。
-    - "mix": 整合知识图谱和向量检索。
+    """Specifies the retrieval mode:
+    - "local": Focuses on context-dependent information.
+    - "global": Utilizes global knowledge.
+    - "hybrid": Combines local and global retrieval methods.
+    - "naive": Performs a basic search without advanced techniques.
+    - "mix": Integrates knowledge graph and vector retrieval.
     """
 
     only_need_context: bool = False
-    """如果为True，仅返回检索到的上下文，不生成响应。"""
+    """If True, only returns the retrieved context without generating a response."""
 
     only_need_prompt: bool = False
-    """如果为True，仅返回生成的提示，不产生响应。"""
+    """If True, only returns the generated prompt without producing a response."""
 
     response_type: str = "Multiple Paragraphs"
-    """定义响应格式。例如：'Multiple Paragraphs'（多段落）、'Single Paragraph'（单段落）、'Bullet Points'（项目符号）。"""
+    """Defines the response format. Examples: 'Multiple Paragraphs', 'Single Paragraph', 'Bullet Points'."""
 
     stream: bool = False
-    """如果为True，启用流式输出以实现实时响应。"""
+    """If True, enables streaming output for real-time responses."""
 
     top_k: int = int(os.getenv("TOP_K", "60"))
-    """检索的顶级项目数量。在'local'模式下表示实体，在'global'模式下表示关系。"""
+    """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
 
     max_token_for_text_unit: int = int(os.getenv("MAX_TOKEN_TEXT_CHUNK", "4000"))
-    """每个检索文本块允许的最大token数。"""
+    """Maximum number of tokens allowed for each retrieved text chunk."""
 
     max_token_for_global_context: int = int(
         os.getenv("MAX_TOKEN_RELATION_DESC", "4000")
     )
-    """全局检索中关系描述分配的最大token数。"""
+    """Maximum number of tokens allocated for relationship descriptions in global retrieval."""
 
     max_token_for_local_context: int = int(os.getenv("MAX_TOKEN_ENTITY_DESC", "4000"))
-    """本地检索中实体描述分配的最大token数。"""
+    """Maximum number of tokens allocated for entity descriptions in local retrieval."""
 
     hl_keywords: list[str] = field(default_factory=list)
-    """优先检索的高级关键字列表。"""
+    """List of high-level keywords to prioritize in retrieval."""
 
     ll_keywords: list[str] = field(default_factory=list)
-    """用于细化检索焦点的低级关键字列表。"""
+    """List of low-level keywords to refine retrieval focus."""
 
     conversation_history: list[dict[str, str]] = field(default_factory=list)
-    """存储过去的对话历史以保持上下文。
-    格式：[{"role": "user/assistant", "content": "消息"}]。
+    """Stores past conversation history to maintain context.
+    Format: [{"role": "user/assistant", "content": "message"}].
     """
 
     history_turns: int = 3
-    """响应上下文中考虑的完整对话轮次（用户-助手对）数量。"""
+    """Number of complete conversation turns (user-assistant pairs) to consider in the response context."""
 
     ids: list[str] | None = None
-    """用于过滤结果的ID列表。"""
+    """List of ids to filter the results."""
 
     model_func: Callable[..., object] | None = None
-    """可选的LLM模型函数覆盖，用于此特定查询。
-    如果提供，将使用此函数而不是全局模型函数。
-    这允许为不同的查询模式使用不同的模型。
+    """Optional override for the LLM model function to use for this specific query.
+    If provided, this will be used instead of the global model function.
+    This allows using different models for different query modes.
     """
 
     user_prompt: str | None = None
-    """用户提供的查询提示。
-    如果提供，将使用此提示而不是提示模板中的默认值。
+    """User-provided prompt for the query.
+    If proivded, this will be use instead of the default vaulue from prompt template.
     """
 ```
 
@@ -536,8 +526,6 @@ if __name__ == "__main__":
 ### 对话历史
 
 LightRAG现在通过对话历史功能支持多轮对话。以下是使用方法：
-<details>
-<summary> <b>使用案例</b> </summary>
 
 ```python
 # 创建对话历史
@@ -560,8 +548,6 @@ response = rag.query(
     param=query_param
 )
 ```
-
-</details>
 
 ### 用户提示词 vs. 查询内容
 
@@ -1017,34 +1003,33 @@ rag.merge_entities(
 
 </details>
 
-## Token统计功能
-## Multimodal Document Processing (MinerU Integration)
+## 多模态文档处理（MinerU集成）
 
-LightRAG now supports comprehensive multi-modal document processing through [MinerU](https://github.com/opendatalab/MinerU) integration, enabling advanced parsing and retrieval-augmented generation (RAG) capabilities. This powerful feature allows you to handle multi-modal documents seamlessly, extracting structured content—including text, images, tables, and formulas—from various document formats for integration into your RAG pipeline.
+LightRAG 现已支持通过 [MinerU](https://github.com/opendatalab/MinerU) 实现多模态文档解析与检索增强生成（RAG）。您可以从 PDF、图片、Office 文档中提取结构化内容（文本、图片、表格、公式等），并在 RAG 流程中使用。
 
-**Key Features:**
-- **Multimodal Document Handling**: Process complex documents containing mixed content types (text, images, tables, formulas)
-- **Comprehensive Format Support**: Parse PDFs, images, DOC/DOCX/PPT/PPTX, and additional file types
-- **Multi-Element Extraction**: Extract and index text, images, tables, formulas, and document structure
-- **Multimodal Retrieval**: Query and retrieve diverse content types (text, images, tables, formulas) within RAG workflows
-- **Seamless Integration**: Works smoothly with LightRAG core and RAG-Anything frameworks
+**主要特性：**
+- 支持解析 PDF、图片、DOC/DOCX/PPT/PPTX 等多种格式
+- 提取并索引文本、图片、表格、公式及文档结构
+- 在 RAG 中查询和检索多模态内容（文本、图片、表格、公式）
+- 与 LightRAG Core 及 RAGAnything 无缝集成
 
-**Quick Start:**
-1. Install dependencies:
+**快速开始：**
+1. 安装依赖：
    ```bash
    pip install "magic-pdf[full]>=1.2.2" huggingface_hub
    ```
-2. Download MinerU model weights (refer to [MinerU Integration Guide](docs/mineru_integration_en.md))
-3. Process multi-modal documents using the new MineruParser or RAG-Anything's process_document_complete:
+2. 下载 MinerU 模型权重（详见 [MinerU 集成指南](docs/mineru_integration_zh.md)）
+3. 使用新版 `MineruParser` 或 RAGAnything 的 `process_document_complete` 处理文件：
    ```python
    from lightrag.mineru_parser import MineruParser
    content_list, md_content = MineruParser.parse_pdf('path/to/document.pdf', 'output_dir')
-   # or for any file type:
+   # 或自动识别类型：
    content_list, md_content = MineruParser.parse_document('path/to/file', 'auto', 'output_dir')
    ```
-4. Query multimodal content with LightRAG refer to [docs/mineru_integration_en.md](docs/mineru_integration_en.md).
+4. 使用 LightRAG 查询多模态内容请参见 [docs/mineru_integration_zh.md](docs/mineru_integration_zh.md)。
 
-## Token Usage Tracking
+
+## Token统计功能
 
 <details>
 <summary> <b>概述和使用</b> </summary>
@@ -1462,34 +1447,6 @@ def extract_queries(file_path):
 </a>
 
 ## 🌟引用
-## Troubleshooting
-
-### Common Initialization Errors
-
-If you encounter these errors when using LightRAG:
-
-1. **`AttributeError: __aenter__`**
-   - **Cause**: Storage backends not initialized
-   - **Solution**: Call `await rag.initialize_storages()` after creating the LightRAG instance
-
-2. **`KeyError: 'history_messages'`**
-   - **Cause**: Pipeline status not initialized
-   - **Solution**: Call `await initialize_pipeline_status()` after initializing storages
-
-3. **Both errors in sequence**
-   - **Cause**: Neither initialization method was called
-   - **Solution**: Always follow this pattern:
-   ```python
-   rag = LightRAG(...)
-   await rag.initialize_storages()
-   await initialize_pipeline_status()
-   ```
-
-### Model Switching Issues
-
-When switching between different embedding models, you must clear the data directory to avoid errors. The only file you may want to preserve is `kv_store_llm_response_cache.json` if you wish to retain the LLM cache.
-
-## 🌟Citation
 
 ```python
 @article{guo2024lightrag,
